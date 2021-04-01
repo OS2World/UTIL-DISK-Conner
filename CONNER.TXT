@@ -1,0 +1,17 @@
+Conner.Exe is a utility
+        to set automatic power-down for Conner 3« inch IDE-drives.
+Call: Conner Power-down delay (minutes)
+        delay from 1 to 20: Power-down after (minutes) idle time
+        delay from -1 to -20: Additionally turn off drive now
+        delay = 0: Turn on drive, disable auto power-down
+Notes: Tested with OS/2 2.0, 1.x and DOS for:
+        CP3024 (20MB), CP3044 (40MB), CP30104 (115MB).
+       DO NOT USE WITH OTHER DRIVES! USE AT YOUR OWN RISK ONLY!
+Version 3 (US & German message), R.W.Saddey, Berlin, Germany; DEC-92
+
+
+For the curious ones:
+  Source in Conner.C to be compiled using MS C6.00a
+  cl -G0s -Oxaz -Lp -Fb Conner.C Conner.Def /link /ali:16 /e /packc
+
+                           R.W.Saddey CIS 100022,571
